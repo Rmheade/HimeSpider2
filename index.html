@@ -146,6 +146,10 @@
           
           newWin.document.getElementsByTagName('head')[0].appendChild(link);
           newWin.document.title = "Desmos | Graphing Calculator";
+
+          const style = newWin.document.createElement('style');
+          style.textContent = `https://studying.work.gd/index.css`;
+          newWin.document.head.appendChild(style);
           
           newWin.document.close();
         });
